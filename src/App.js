@@ -8,6 +8,7 @@ import WeatherData from "./components/WeatherData";
 import Info from "./components/Info";
 import Unit from "./components/Unit";
 import Previous from "./components/Previous";
+import Error from "./components/Error";
 //Img
 import BGImage from "./img/nasa-mars-bg.jpg";
 //Styles
@@ -24,13 +25,16 @@ const App = () => {
   const [selectedSol, setSelectedSol] = useState();
   const [metric, setMetric] = useState(true);
   const [previous, setPrevious] = useState(false);
-
-  console.log(weather);
+  const [error, setError] = useState(true);
+  // console.log(weather);
 
   useEffect(() => {
     const fetchFromApi = async () => {
       const weather = await (await fetch(API_URL)).json();
       console.log(weather);
+
+      weather && weather.sol_keys.length !== 0 ? setError(false) : setError(true);
+
       const marsWeather = weather.sol_keys.map((solKey) => {
         return {
           // key: solKey,
@@ -50,6 +54,7 @@ const App = () => {
       setWeather(marsWeather);
       setSelectedSol(marsWeather.length - 1);
       setLoading(false);
+      console.log(weather);
     };
 
     fetchFromApi();
@@ -62,10 +67,12 @@ const App = () => {
         <MarsWeather>
           {loading ? (
             <div>Loading ... </div>
+          ) : error ? (
+            <Error/>
           ) : (
             <>
               <h1 className="main-title">
-                Latest Weather at Elysium Plantitia
+                Latest Weather at Elysium Plantitia delivered by Insight Mars
               </h1>
               <WeatherData sol={weather[selectedSol]} isMetric={metric} />
               <InfoWrapper>
