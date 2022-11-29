@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/Mars_Weather_App_React/static/js/main.a0e1b258.chunk.js",
-    "main.js.map": "/Mars_Weather_App_React/static/js/main.a0e1b258.chunk.js.map",
+    "main.js": "/Mars_Weather_App_React/static/js/main.f4e5e19e.chunk.js",
+    "main.js.map": "/Mars_Weather_App_React/static/js/main.f4e5e19e.chunk.js.map",
     "runtime-main.js": "/Mars_Weather_App_React/static/js/runtime-main.d4df47cb.js",
     "runtime-main.js.map": "/Mars_Weather_App_React/static/js/runtime-main.d4df47cb.js.map",
-    "static/js/2.1b1d3b85.chunk.js": "/Mars_Weather_App_React/static/js/2.1b1d3b85.chunk.js",
-    "static/js/2.1b1d3b85.chunk.js.map": "/Mars_Weather_App_React/static/js/2.1b1d3b85.chunk.js.map",
+    "static/js/2.9d690d21.chunk.js": "/Mars_Weather_App_React/static/js/2.9d690d21.chunk.js",
+    "static/js/2.9d690d21.chunk.js.map": "/Mars_Weather_App_React/static/js/2.9d690d21.chunk.js.map",
     "index.html": "/Mars_Weather_App_React/index.html",
-    "precache-manifest.139c157d98f67e1ee45541789bc7895c.js": "/Mars_Weather_App_React/precache-manifest.139c157d98f67e1ee45541789bc7895c.js",
+    "precache-manifest.733547bca930d6f2963c74132cec7381.js": "/Mars_Weather_App_React/precache-manifest.733547bca930d6f2963c74132cec7381.js",
     "service-worker.js": "/Mars_Weather_App_React/service-worker.js",
-    "static/js/2.1b1d3b85.chunk.js.LICENSE.txt": "/Mars_Weather_App_React/static/js/2.1b1d3b85.chunk.js.LICENSE.txt",
+    "static/js/2.9d690d21.chunk.js.LICENSE.txt": "/Mars_Weather_App_React/static/js/2.9d690d21.chunk.js.LICENSE.txt",
+    "static/media/mars-dan-gerhards-01.svg": "/Mars_Weather_App_React/static/media/mars-dan-gerhards-01.cfd65514.svg",
     "static/media/nasa-mars-bg.jpg": "/Mars_Weather_App_React/static/media/nasa-mars-bg.249d1f5c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d4df47cb.js",
-    "static/js/2.1b1d3b85.chunk.js",
-    "static/js/main.a0e1b258.chunk.js"
+    "static/js/2.9d690d21.chunk.js",
+    "static/js/main.f4e5e19e.chunk.js"
   ]
 }
